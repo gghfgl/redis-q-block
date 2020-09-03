@@ -88,23 +88,3 @@ func main() {
 
 	e.Logger.Fatal(e.Start(":8080"))
 }
-
-// TODO:
-// func Consumer() {
-// 	// consumer
-// 	fmt.Println("Waiting for jobs on jobQueue:", qKey)
-// 	go func() {
-// 		for {
-// 			// time.Sleep(3 * time.Second)
-// 			result, err := rdc.BLPop(0 * time.Second, qKey).Result()
-// 			if err != nil {
-// 				log.Fatal(err)
-// 			}
-
-// 			fmt.Println("Executing job:", result[1])
-// 		}
-// 	}()
-
-// 	// block for ever, used for testing only
-// 	select {}
-// }
